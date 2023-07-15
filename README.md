@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Book Store</b></h3>
@@ -98,15 +98,12 @@ git clone https://github.com/Dachrono/Bookstore.git
 
 Install this project with:
 
-sh
-cd my-project
-npm init -y
+npm install
 
 ### Usage
 
 To run the project, execute the following command:
 
-sh
 npm start
 
 ### Run tests
