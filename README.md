@@ -63,6 +63,7 @@
 - **[Use of React.js]**
 - **[Use of route to SPA]**
 - **[Responsive desing]**
+- **[Use of redux toolkit]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
