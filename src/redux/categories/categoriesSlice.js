@@ -14,4 +14,6 @@ const categoriesSlice = createSlice({
   },
 });
 
+export const { checkStaus } = categoriesSlice.actions;
+
 export default categoriesSlice.reducer;
