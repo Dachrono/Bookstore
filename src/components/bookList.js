@@ -1,7 +1,13 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { apiData } from '../redux/books/booksSlice';
 import BookItem from './bookItem';
 
 function List() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(apiData());
+  }, []);
   const books = useSelector((store) => store.books);
   return (
     <>

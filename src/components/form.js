@@ -1,27 +1,29 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { useDispatch } from 'react-redux';
+import { apiPost } from '../redux/books/booksSlice';
 
 function Form() {
   const dispatch = useDispatch();
-  const itemId = useSelector((state) => state.books.books.length + 1);
   const category = 'Por defectoXD';
 
   return (
     <>
       <form className="form">
         <h1 id="name">ADD NEW BOOK</h1>
-        <input type="text" id="title" placeholder="Book Title" />
-        <input type="text" id="author" placeholder="Author" />
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Author" required />
         <button
           type="button"
-          onClick={() => dispatch(addBook(
-            {
-              item_id: `item${itemId}`,
-              title: document.getElementById('title').value,
-              author: document.getElementById('author').value,
-              category,
-            },
-          ))}
+          onClick={() => {
+            dispatch(apiPost(
+              {
+                item_id: Date.now().toString(),
+                title: document.getElementById('title').value,
+                author: document.getElementById('author').value,
+                category,
+              },
+            ));
+            document.getElementsByClassName('form')[0].reset();
+          }}
         >
           Submit
         </button>

@@ -1,12 +1,12 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/booksSlice';
+import { apiErase } from '../redux/books/booksSlice';
 
 function ActionButtons({ book }) {
   const dispatch = useDispatch();
   return (
     <div>
-      <button type="button" className="btnAcc" onClick={() => dispatch(removeBook(book.item_id))}>Remove</button>
+      <button type="button" className="btnAcc" onClick={() => dispatch(apiErase(book.item_id))}>Remove</button>
       <button type="button" className="btnAcc">Edit</button>
     </div>
   );
