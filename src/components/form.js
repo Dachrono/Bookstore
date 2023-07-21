@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { apiPost } from '../redux/books/booksSlice';
 
 function Form() {
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ function Form() {
         <input type="text" id="author" placeholder="Author" />
         <button
           type="button"
-          onClick={() => dispatch(addBook(
+          onClick={() => dispatch(apiPost(
             {
               item_id: `item${itemId}`,
               title: document.getElementById('title').value,
