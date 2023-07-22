@@ -1,10 +1,83 @@
 .NavBar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  width: 82%;
+  padding: 0 9% 0 9%;
   background-color: #fff;
-  padding: 0 20px;
-  height: 60px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 1px #e8e8e8;
+}
+
+.menu {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 5.8rem;
+}
+
+.navTitle {
+  width: 10rem;
+  height: 2.3rem;
+  margin: 0.125rem 0 0.125rem 0;
+  padding: 0 0 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 2.9rem;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+#link1 {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+#link2 {
+  opacity: 0.5;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.Oval {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  color: blue;
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+}
+
+.Oval svg {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.8rem 0 0.8rem 0;
 }

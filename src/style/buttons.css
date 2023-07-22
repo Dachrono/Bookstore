@@ -1,0 +1,20 @@
+.buttonCont {
+  margin: 1.5rem 0 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #e8e8e8;
+}
+
+.buttonCont button {
+  all: initial;
+  cursor: pointer;
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
