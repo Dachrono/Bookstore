@@ -15,6 +15,7 @@
 }
 
 .porcent {
+  margin: 0 1.5rem 0 1.5rem;
   display: flex;
   align-items: center;
   width: 24%;
@@ -54,13 +55,13 @@
 }
 
 .Line-2 {
-  margin-right: 40px;
   width: 0.125rem;
   height: 4.375rem;
   border-left: solid 1px #e8e8e8;
 }
 
 .progress {
+  margin: 0 1.5rem 0 1.5rem;
   display: flex;
   flex-direction: column;
   font-family: "RobotoSlab", sans-serif;
@@ -86,7 +87,7 @@
 
 .up {
   cursor: pointer;
-  width: 11.5rem;
+  width: 10.5rem;
   height: 2.063rem;
   margin: 1.5rem 0 1.5rem 0;
   border-radius: 3px;
